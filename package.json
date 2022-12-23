@@ -1,0 +1,17 @@
+{
+  "name": "qfiles",
+  "version": "1.0.0",
+  "description": "使用HTTP访问QQ群文件",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "QQ"
+  ],
+  "author": "This-is-XiaoDeng",
+  "license": "MIT",
+  "dependencies": {
+    "oicq": "^2.3.1"
+  }
+}
