@@ -45,7 +45,7 @@ app.get("/*", async (req, res) => {
     table = table + "</table>";
     // 返回页面
     html = html.replace("{path}", path).replace("{group}", group).replace("{file_list}", table);
-    client.logger.info(html);
+    // client.logger.info(html);
     res.send(html);
   } else {
     let fid = req.query.download;
