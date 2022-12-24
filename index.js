@@ -23,7 +23,13 @@ class Server {
       let path = req.url;
       let gfs = this.client.acquireGfs(this.group);
       if (req.query.download === undefined) {
-        let file_list = await gfs.ls(path, 0);
+        let file_list = {};
+        try {
+          file_list = await gfs.ls(path, 0);
+        } catch {
+          res.send("Cannot get files list, please wait and try again!");
+          this.client.logger.error("Cannot get files list!");
+        }
         // 读取模板
         let file = fs.readFileSync("./web/index.html");
         let html = file.toString();
