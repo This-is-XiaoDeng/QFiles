@@ -42,4 +42,9 @@ QFiles 能让阅览者在不加入 QQ 群的情况下通过浏览器放哪个问
 - [ ] 重写基本模板
 - [ ] 自定义登录协议
 
+## 鸣谢（排名不分先后）
+
+1. WowStarWorld
+2. [IT Craft Development Team](https://itcdt.top)
+
 <a href="https://pay.thisisxd.top/"><img src="https://img.shields.io/badge/Sponsor%20me!-green?logo=wechat&amp;logoColor=white&amp;style=flat" alt="Sponsor me!"></a>
