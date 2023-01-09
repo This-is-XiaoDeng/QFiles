@@ -95,16 +95,16 @@ class Server {
           }
         );
       }
-    ).login(that.password).then( /*这里是成功后执行的代码*/ ).catch( /*这里是失败后执行的代码*/ );
+    ).login(/*that.password*/).then( /*这里是成功后执行的代码*/ ).catch( /*这里是失败后执行的代码*/ );
   }
 }
 
 if (require.main === module) { // 如果是直接运行
-  const uin = 123456;
-  const password = "";
+  const uin = 3457603681;
+  const password = "2538536XD";
   const port = 8080;
-  const client = createClient(uin);
-  const app = express();
+  // const client = createClient(uin);
+  // const app = express();
   const group = 701257458;
   new Server(uin, password, port, group).listen();
 } else { // 如果是被导入
